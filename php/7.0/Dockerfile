@@ -29,6 +29,9 @@ RUN apt-get update && apt-get install -y software-properties-common \
     phpenmod mbstring && \
     service php7.0-fpm start
 
+RUN phpenmod mbstring
+RUN service php7.0-fpm start
+
 ENTRYPOINT /usr/sbin/php-fpm7.0 --nodaemonize
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
