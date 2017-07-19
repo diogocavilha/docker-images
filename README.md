@@ -1,6 +1,6 @@
 # Custom docker images
 
-# Don't you have docker installed yet?
+## Don't you have docker installed yet?
 
 Running the following command you'll get docker and docker-compose installed on your machine.
 
