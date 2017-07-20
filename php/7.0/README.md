@@ -1,7 +1,9 @@
-# PHP7.0 + php7.0-fpm + Phalcon Framework 3.0.1 + Composer
+![Image](https://github.com/diogocavilha/docker-images/blob/master/assets/images/php-phalcon-composer-header.jpg)
+
+### PHP7.0 + php7.0-fpm + Phalcon Framework 3.0.1 + Composer
 
 You must mount the `www.conf` file into the instantiated Docker Container at `/etc/php/7.0/fpm/pool.d/www.conf`
 
-# Exposed Ports
+### Exposed Ports
 
 The PHP-FPM process listens on container port `9000`
