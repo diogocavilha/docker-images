@@ -11,6 +11,7 @@ RUN add-apt-repository -y ppa:ondrej/php && \
     apt-get update && apt-get install -y --no-install-recommends \
     curl \
     zip \
+    git \
     memcached \
     php-memcached \
     php-xdebug \
