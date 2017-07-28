@@ -5,7 +5,7 @@
 Running the following command you'll get docker and docker-compose installed on your machine.
 
 ```sh
-sudo curl -sS https://raw.githubusercontent.com/diogocavilha/docker-images/install.sh | sh
+sudo curl -sS https://raw.githubusercontent.com/diogocavilha/docker-images/master/install.sh | sh
 ```
 
 ## Config files
