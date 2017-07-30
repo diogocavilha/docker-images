@@ -6,9 +6,9 @@ ARG LC_ALL=C.UTF-8
 
 CMD ["/sbin/my_init"]
 
-RUN add-apt-repository -y ppa:ondrej/php && \
-    curl https://packagecloud.io/gpg.key | apt-key add - && \
-    apt-get update && apt-get install -y --no-install-recommends \
+RUN add-apt-repository -y ppa:ondrej/php \
+    && curl https://packagecloud.io/gpg.key | apt-key add - \
+    && apt-get update && apt-get install -y --no-install-recommends \
     curl \
     zip \
     git \
@@ -28,12 +28,13 @@ RUN add-apt-repository -y ppa:ondrej/php && \
     php7.1-intl \
     php7.1-mysql \
     php7.1-json \
-    php7.1-mbstring && \
-    curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin && \
-    curl -s https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh | bash && \
-    apt-get install -y php7.1-phalcon && \
+    php7.1-xml \
+    php7.1-mbstring \
+    &&  curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin \
+    && curl -s https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh | bash \
+    && apt-get install -y php7.1-phalcon \
     # Clean
-    apt-get purge -y --auto-remove && apt-get clean all && rm -rf /var/lib/apt/
+    && apt-get purge -y --auto-remove && apt-get clean all && rm -rf /var/lib/apt/
 
 RUN phpenmod mbstring
 RUN service php7.1-fpm start
