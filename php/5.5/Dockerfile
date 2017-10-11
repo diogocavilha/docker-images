@@ -29,4 +29,5 @@ RUN apt-get update && \
     cd /etc/php5/fpm/conf.d && ln -s /etc/php5/mods-available/mcrypt.ini . && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+RUN service php-fpm start
 RUN rm -rf /var/lib/apt/lists/*
