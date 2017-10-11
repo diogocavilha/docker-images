@@ -5,3 +5,11 @@ You must mount the `www.conf` file into the instantiated Docker Container at `/e
 # Exposed Ports
 
 The PHP-FPM process listens on container port `9000`.
+
+# Building
+
+Run the following command at the same directory where the `Dockerfile` is:
+
+```bash
+docker build -t tuxmate/php:5.5.9
+```
