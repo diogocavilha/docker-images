@@ -11,5 +11,5 @@ The PHP-FPM process listens on container port `9000`.
 Run the following command at the same directory where the `Dockerfile` is:
 
 ```bash
-docker build -t tuxmate/php:5.5.9
+docker build -t tuxmate/php:5.5.9 .
 ```
