@@ -6,6 +6,8 @@ ARG LC_ALL=C.UTF-8
 
 CMD ["/sbin/my_init"]
 
+RUN sed -i 's#http://archive.ubuntu.com#http://ubuntu.c3sl.ufpr.br#g' /etc/apt/sources.list
+
 RUN add-apt-repository -y ppa:ondrej/php \
     && curl https://packagecloud.io/gpg.key | apt-key add - \
     && apt-get update && apt-get install -y --no-install-recommends \
