@@ -31,3 +31,5 @@ RUN apt-get update && \
 
 RUN service php5-fpm start
 RUN rm -rf /var/lib/apt/lists/*
+
+ENTRYPOINT /usr/sbin/php5-fpm --nodaemonize
