@@ -11,7 +11,7 @@ install_docker() {
 }
 
 install_dockercompose() {
-    local url_download="https://github.com/docker/compose/releases/download/1.8.1/docker-compose-$(uname -s)-$(uname -m)"
+    local url_download="https://github.com/docker/compose/releases/download/1.19.0/docker-compose-$(uname -s)-$(uname -m)"
     curl -L $url_download > /usr/local/bin/docker-compose && \
     chmod +x /usr/local/bin/docker-compose
     docker-compose -v
