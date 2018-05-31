@@ -34,6 +34,7 @@ RUN add-apt-repository -y ppa:ondrej/php \
     php7.2-json \
     php7.2-xml \
     php7.2-mbstring \
+    php7.2-xdebug \
     && curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin
 
 # Clean
