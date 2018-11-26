@@ -8,6 +8,11 @@ Running the following command you'll get docker and docker-compose installed on 
 sudo curl -sS https://raw.githubusercontent.com/diogocavilha/docker-images/master/install.sh | sh
 ```
 
+## Once you're using Ubuntu > 18
+```sh
+sudo curl -sS https://raw.githubusercontent.com/diogocavilha/docker-images/master/install-ubuntu.sh | sh
+```
+
 ## Config files
 
 - [PHP 7.0](https://github.com/diogocavilha/docker-images/tree/master/php/7.0)
